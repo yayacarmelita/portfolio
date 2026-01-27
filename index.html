@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carmelita | Portfolio</title>
+
+    <!-- Fonts: Outfit for Modern/Clean look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Main Style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Carmelita<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact" class="btn-primary">Contact Me</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <p class="greeting">Hello, I'm</p>
+                <h1 class="name">Carmelita</h1>
+                <div class="typing-container">
+                    <span class="static-text">I am a </span>
+                    <span class="dynamic-text"></span>
+                </div>
+                <p class="description">
+                    Professional Data Analyst, System Analyst, Business Analyst & QA.
+                    Turning data into insights and ensuring quality in every pixel.
+                </p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn-primary">View Portfolio</a>
+                    <a href="#contact" class="btn-outline">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <!-- Abstract "Milk Blue" Blob/Shape logic here or image -->
+                <div class="blob-shape"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I am a versatile professional with a strong background in analyzing complex systems and data.
+                        My unique blend of skills covers the entire software development lifecycle—from understanding
+                        business requirements
+                        to analyzing system architecture and ensuring the highest quality of the final product.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-grid">
+                <!-- Data Analyst -->
+                <div class="skill-card">
+                    <div class="icon-box"><i class="fas fa-chart-line"></i></div>
+                    <h3>Data Analyst</h3>
+                    <p>SQL, Python, Excel, PowerBI, Tableau</p>
+                </div>
+                <!-- System Analyst -->
+                <div class="skill-card">
+                    <div class="icon-box"><i class="fas fa-server"></i></div>
+                    <h3>System Analyst</h3>
+                    <p>UML, System Architecture, API Design</p>
+                </div>
+                <!-- Business Analyst -->
+                <div class="skill-card">
+                    <div class="icon-box"><i class="fas fa-briefcase"></i></div>
+                    <h3>Business Analyst</h3>
+                    <p>Requirement Gathering, Stakeholder Management, Agile/Scrum</p>
+                </div>
+                <!-- QA -->
+                <div class="skill-card">
+                    <div class="icon-box"><i class="fas fa-bug"></i></div>
+                    <h3>QA Engineer</h3>
+                    <p>Manual Testing, Automated Testing, Selenium, Test Plans</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-img-placeholder"></div>
+                    <div class="project-info">
+                        <h3>Sales Data Dashboard</h3>
+                        <span class="tag">Data Analysis</span>
+                        <p>Interactive dashboard visualizing sales trends using PowerBI and SQL.</p>
+                        <a href="#" class="link-arrow">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Add more project cards later -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-alt">
+        <div class="container contact-container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-subtitle">Let's discuss how I can help your business grow.</p>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Carmelita. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
