@@ -88,6 +88,7 @@ ul {
 
 .section {
     padding: 100px 0;
+    padding-left: var(--sidebar-width);
 }
 
 .bg-alt {
