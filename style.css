@@ -193,100 +193,112 @@ ul {
 
 /* Hero Section */
 .hero {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     position: relative;
-    background: radial-gradient(circle at 90% 10%, var(--milk-blue-100) 0%, transparent 40%),
-        radial-gradient(circle at 10% 90%, var(--milk-blue-50) 0%, transparent 40%);
+    padding-left: var(--sidebar-width);
+    background-color: var(--bg-color);
+    background-image:
+        radial-gradient(circle at 100% 0%, var(--primary-light) 0%, transparent 20%),
+        radial-gradient(circle at 0% 100%, var(--primary-light) 0%, transparent 20%);
+    overflow: hidden;
 }
 
 .hero-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 50px;
+    width: 100%;
+    gap: 40px;
 }
 
-.greeting {
-    font-size: 1.5rem;
-    color: var(--milk-blue-400);
-    font-weight: 600;
-    margin-bottom: 10px;
+.hero-content {
+    flex: 1;
 }
 
 .name {
-    font-size: 4rem;
-    font-weight: 700;
+    font-size: 4.5rem;
+    font-weight: 800;
+    line-height: 1.1;
     margin-bottom: 20px;
-    background: linear-gradient(45deg, var(--text-main), var(--milk-blue-500));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.typing-container {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 30px;
-    height: 40px;
-    /* Prevent layout shift */
-}
-
-.dynamic-text {
-    color: var(--milk-blue-300);
-    position: relative;
-}
-
-.dynamic-text::after {
-    content: '|';
-    position: absolute;
-    right: -8px;
-    animation: blink 0.7s infinite;
-}
-
-@keyframes blink {
-
-    0%,
-    100% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 0;
-    }
+    color: var(--text-main);
+    text-transform: uppercase;
 }
 
 .description {
+    font-size: 1.5rem;
     color: var(--text-light);
     margin-bottom: 40px;
-    font-size: 1.1rem;
-    max-width: 500px;
+    font-weight: 400;
+    max-width: 600px;
 }
 
-.blob-shape {
+.btn-primary {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 15px 40px;
+    border-radius: var(--border-radius);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: var(--transition);
+    border: none;
+    box-shadow: var(--shadow-md);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(135, 206, 235, 0.3);
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.profile-pic-container {
     width: 400px;
     height: 400px;
-    background: linear-gradient(135deg, var(--milk-blue-100), var(--milk-blue-200));
-    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-    animation: morph 8s ease-in-out infinite;
-    margin: 0 auto;
-    box-shadow: var(--shadow-lg);
-    position: relative;
-    /* Hook for image later */
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid var(--white);
+    box-shadow: var(--shadow-md);
 }
 
-@keyframes morph {
-    0% {
-        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-    }
+.profile-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
-    50% {
-        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
-    }
+/* Geometric Accents */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(135deg, rgba(135, 206, 235, 0.1) 0%, transparent 100%);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    z-index: -1;
+}
 
-    100% {
-        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-    }
+.hero::after {
+    content: '';
+    position: absolute;
+    bottom: 5%;
+    left: 15%;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(45deg, rgba(135, 206, 235, 0.1) 0%, transparent 100%);
+    border-radius: 20px;
+    transform: rotate(45deg);
+    z-index: -1;
 }
 
 /* Skills Cards */
