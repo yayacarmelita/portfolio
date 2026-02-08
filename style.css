@@ -2,28 +2,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
 
 :root {
-    /* Milk Blue Theme Palette */
-    --milk-blue-50: #f0f9ff;
-    --milk-blue-100: #e0f2fe;
-    --milk-blue-200: #bae6fd;
-    --milk-blue-300: #89CFF0;
-    /* Primary Brand Color */
-    --milk-blue-400: #38bdf8;
-    --milk-blue-500: #0ea5e9;
-    --milk-blue-600: #0284c7;
+    /* Sky Blue Theme Palette */
+    --primary-color: #87CEEB;
+    --primary-dark: #6eb5d1;
+    --primary-light: #b0e2f5;
 
     --bg-color: #ffffff;
-    --bg-alt: #f8fbff;
-    --text-main: #334155;
-    --text-light: #64748b;
+    --bg-alt: #f4f7f9;
+    --text-main: #2d3436;
+    --text-light: #636e72;
     --white: #ffffff;
+    --black: #000000;
 
-    --shadow-sm: 0 4px 6px -1px rgba(137, 207, 240, 0.1);
-    --shadow-md: 0 10px 15px -3px rgba(137, 207, 240, 0.15);
-    --shadow-lg: 0 20px 25px -5px rgba(137, 207, 240, 0.2);
+    --sidebar-width: 80px;
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --border-radius: 8px;
 
-    --border-radius: 12px;
-    --transition: all 0.3s ease;
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 * {
